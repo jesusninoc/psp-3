@@ -1,0 +1,4 @@
+Comprobante de compra
+El vehiculo con matricula2099fwy
+Se ha alquiola  a el cliente con DNI1
+Por el precio de 200
