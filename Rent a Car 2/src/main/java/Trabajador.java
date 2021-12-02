@@ -1,8 +1,12 @@
 import Database.SchemaDB;
 import Hilos.Hilo;
 import com.mysql.cj.jdbc.StatementImpl;
+import multicast.MulticastS;
 
 import java.io.*;
+import java.net.DatagramPacket;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
 import java.sql.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -53,7 +57,27 @@ public final class Trabajador extends Usuario {
         System.out.println("ID del trabajador: " + idTrabajdor);
         super.verDatos();
     }
+public void notificarComprar() throws IOException {
+    InetAddress multicastGroupIP = InetAddress.getByName("224.0.0.5");
+    System.out.println(multicastGroupIP);
+    int port=2020;
+    MulticastSocket socket = new MulticastSocket(port);
 
+    try {
+        socket.joinGroup(multicastGroupIP);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+
+
+    byte[] m = "Coche comprado de forma correcta a las ".getBytes();
+
+    DatagramPacket send = new DatagramPacket(m, m.length, multicastGroupIP, port);
+    socket.send(send);
+
+    byte[] bufer = new byte[1000];
+    String linea;
+}
     @Override
     public void verCochesAlquilados() {
         super.verCochesAlquilados();
@@ -418,6 +442,13 @@ public final class Trabajador extends Usuario {
             }
 
             System.out.println("El precio total de la venta es: " + precio);
+            try {
+                notificarComprar();
+            } catch (IOException e) {
+
+            }
+
+
             String queryAlquileresPATH = "INSERT INTO %s (%s,%s,%s) VALUES ('%s','%s',%d)";
             String queryCreate = String.format(queryAlquileresPATH,
                     SchemaDB.DB_TAB_VENTAS,
