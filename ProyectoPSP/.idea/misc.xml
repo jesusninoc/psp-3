@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/dialogo_accerder.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/dialogo_registro.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/fragment_detalle.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/layout/fragment_dos.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/layout/fragment_uno.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/layout/hader_nav.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/layout/header_nav.xml" value="0.23020833333333332" />
+        <entry key="app/src/main/res/layout/item_lista.xml" value="0.23020833333333332" />
+        <entry key="app/src/main/res/layout/item_lista2.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/layout/loging.xml" value="0.344578313253012" />
+        <entry key="app/src/main/res/layout/main_content.xml" value="0.1578125" />
+        <entry key="app/src/main/res/menu/menu_nav.xml" value="0.1578125" />
+        <entry key="app/src/main/res/menu/menu_pref.xml" value="0.23072916666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

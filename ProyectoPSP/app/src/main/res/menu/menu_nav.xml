@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:title="Navegacion">
+
+        <menu>
+            <item android:title="Peliculas"
+                android:icon="@drawable/movie"
+
+                android:id="@+id/menu_nav_f1"
+                />
+
+            <item android:title="Series"
+
+                android:id="@+id/menu_nav_f2"
+                android:icon="@drawable/serie"
+                />
+
+
+        </menu>
+
+    </item>
+
+
+</menu>
