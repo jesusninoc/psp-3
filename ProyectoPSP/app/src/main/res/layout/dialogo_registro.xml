@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="30dp"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bloquear"
+        android:layout_marginBottom="30dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce nombre"
+        android:id="@+id/edit_nombre_registro"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce apellido"
+        android:id="@+id/edit_apellido_registro"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce correo"
+        android:id="@+id/edit_correo_registro"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce pass"
+        android:id="@+id/edit_pass_registro"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/password"
+
+        />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrase"
+        android:id="@+id/boton_registrarse"
+        />
+
+</LinearLayout>
